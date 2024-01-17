@@ -6,47 +6,48 @@
         <link rel="stylesheet" href="Style.css">
         <title>Katik Persegi</title>
     </head>
-    <body>
+    <body> 
         <header>
-            <h1>Kalkulator Luas </h1>
+            <h1>Kalkulator Matematik </h1>
             <h4>Welcome to kalkulator Luas dan Keliling Persegi</h4>
-            <p>Web ini digunakan untuk menghitug Luas dan Keliling Persegi</p>
-        </header>
+            <p> Web ini digunakan untuk menghitung Luas dan Keliling Persegi</p>
+        </header><br>
+        <hr>
+
+        <div>
+                <h1>Luas dan Keliling Persegi</h1>
+                <img class="tengah" src="Persegi.png" width="300">
+                <h3>Rumus Luas Persegi yaitu s x s (sisi x sisi)</h3>
+        </div>
+        
+        <div class="inputSection"> 
+            <label for="squareSide" id="lblSquareSide">Hitung Luas Persegi</label>
+            <input type="number" id="squareSide">
+        </div>
+        <div class="button">
+            <button id="Hitung" value="Hitung" onclick="Hitung()">Hitung</button>
+            <button id="riset" value="riset" onclick="Riset()">Riset</button>
+            <p>Luas Persegi Adalah = <span id="luas"></span></p>
+        </div> 
+        </div>
 
         <hr>
+    
         <div>
-            <h1>Luas Persegi</h1>
-            <img src="luas_persegi.jpg" width="150">
-            <h4>Rumus persegi yaitu: S X S<br> </h4>
-            <p>Dimana S = Sisi</p>
+            <h1>Luas dan Keliling Persegi</h1>
+            <img class="tengah" src="Persegi.png" width="300">
+            <h3>Rumus Keliling Persegi yaitu 4 x s  (4 x sisi)</h3>
         </div>
-        <div>
-            <h1>Hitung Luas Persegi</h1>
-            <div class="inputSection">
-                <input type="number" id="squareSide">
-            </div>
-            <div class="button">
-                <button id="countButton">Hitung</button>
-                <button id="resetButton">Reset</button>
-            </div>
+    
+        <div class="inputSection">
+            <label for="squareSide" id="lblSquareSide">Hitung Keliling Persegi</label>
+            <input type="number" id="squareSidekeliling">
         </div>
-
-        <hr>
-        <div>
-            <h1>Keliling Persegi</h1>
-            <img src="keliling_persegi.jpg" width="200">
-            <h4>Rumus Keliling Persegi yaitu: S X S X S X S<br> </h4>
-            <p>Dimana S = Sisi</p>
-        </div>
-        <div>
-            <h1>Hitung Keliling Persegi</h1>
-            <div class="inputSection">
-                <input type="number" id="squareSide">
-            </div>
-            <div class="button">
-                <button id="countButton">Hitung</button>
-                <button id="resetButton">Reset</button>
-            </div>
-        </div>
+        <div class="button">
+            <button id="Hitung" value="Hitung" onclick="HitungKeliling()">Hitung</button>
+            <button id="riset" value="riset" onclick="RisetKeliling()">Riset</button>
+            <p>Keliling Persegi Adalah = <span id="Kel"></span></p>
+        </div> 
+        <script src="ok.js"></script>
     </body>
 </html>

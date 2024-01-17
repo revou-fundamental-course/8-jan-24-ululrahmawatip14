@@ -1,20 +1,26 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: F3EEEA;
+    background-color: #DCF2F1;
 }
 
 header{
     text-align: center;
 }
 
+img.tengah {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
 header h1 {
-    color:#3d2828;
-    font-size: 30px;
+    color:#00425A;
+    font-size: 40px;
 }
 
 header h4 {
-    margin-top: 32px;
-    color: #C08261;
+    margin-top: 10px;
+    color: black;
 }
 
 header p {
@@ -32,8 +38,17 @@ header p {
 #squareSide {
     outline: none;
     border-radius: 10px;
-    border: solid #C08261;
-    padding: 6px;
+    border: solid #3468C0;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+#squareSidekeliling {
+    outline: none;
+    border-radius: 10px;
+    border: solid #3468C0;
+    padding: 7px;
+    margin-top: 10px;
 }
 
 #squareSide:focus {
@@ -41,16 +56,54 @@ header p {
 }
 
 button {
-    background-color: #B0A695;
-    color: aliceblue;
+    background-color:#3468C0;
+    color: white;
     border: none;
     border-radius: 8px;
-    padding: 8px 20px;
-    cursor: pointer;
     margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #87C4FF;
 }
 
 button:active{
-    background-color: #cc912bd4;
+    background-color: #3468C0;
     transform: translateY(10px);
+}
+
+@media screen and (max-width: 768px){
+    body {
+        background-color: #ACB1D6;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #inputbutton{
+        background-color: white;
+    }
+
+    #squareSide{
+        width:250px;
+        padding: 0,5em 0 0,5em 0;
+        border:solid 5px #F1F1F1;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        background-color: #AFC8DE;
+    }
+
+    #inputKel{
+        width:250px;
+        padding: 0,5em 0 0,5em 0;
+        border:solid 5px #F1F1F1;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        background-color: #AFC8DE;
+    }
 }
